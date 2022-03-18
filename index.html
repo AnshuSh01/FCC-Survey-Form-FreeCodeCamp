@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #nav {
+        display: flex;
+        position: sticky;
+        top: 0px;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        position: relative;
+        z-index: 20;
+    }
+    
+    .editor {
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(151, 144, 144);
+        border-radius: 5px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        text-shadow: none;
+        margin-top: 11px;
+    }
+    
+    .editor1 {
+        right: 2px;
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(104, 233, 104);
+        border-radius: 5px;
+        color: black;
+        font-size: 15px;
+        cursor: pointer;
+        text-shadow: none;
+        margin-top: 11px;
+    }
+    
+    .editor2 {
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(160, 156, 156);
+        border-radius: 5x;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        text-shadow: none;
+        margin-top: 11px;
+    }
+    
+    .editor:hover {
+        background-color: rgb(173, 168, 168);
+    }
+    
+    .editor2:hover {
+        background-color: rgb(173, 168, 168);
+    }
+    
+    .editor1:hover {
+        background-color: rgb(70, 161, 70);
+    }
+    
+    #nav::before {
+        content: "";
+        background-color: black;
+        opacity: 0.9;
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        top: 0px;
+        height: 130%;
+        box-sizing: border-box;
+        width: 101%;
+        margin-top: -10px;
+        margin-left: -8px;
+    }
+    
+    .logo {
+        color: white;
+        line-height: 1px;
+        margin-left: 12px;
+    }
+    
+    .code {
+        opacity: 0.5;
+        position: relative;
+        z-index: 2;
+    }
+    
+    #net {
+        display: flex;
+        margin-left: 800px;
+        margin-top: 5px;
+    }
+    
+    .content {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    
+    .body::before {
+        background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg) no-repeat center center/cover;
+        position: fixed;
+        content: "";
+        height: 600px;
+        width: 100%;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+        opacity: 0.9;
+        box-sizing: border-box;
+    }
+    
+    .codes {
+        opacity: 0.9;
+        font-size: 1.9rem;
+        line-height: 4px;
+        margin-top: 80px;
+    }
+    
+    .codess {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        font-weight: 0;
+    }
+    
+    .field {
+        width: 700px;
+        background-color: rgb(39, 39, 92);
+        opacity: 0.9;
+        display: flex;
+        flex-direction: column;
+        padding: 29px;
+        margin: 19px;
+        font-size: 23px;
+        border-radius: 8px;
+    }
+    
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    label {
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem
+    }
+    
+    input {
+        padding: 4px;
+        border-radius: 4px;
+        position: relative;
+        z-index: 30 !important;
+    }
+    
+    .d {
+        padding: -1px 3px;
+    }
+    
+    select {
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+    
+    #sub {
+        cursor: pointer;
+        background-color: rgb(37, 104, 37);
+        font-size: 20px;
+        padding: 15px;
+        margin-top: 15px;
+        position: relative;
+        z-index: 40;
+    }
+    
+    .net3 {
+        z-index: -2;
+        position: relative;
+    }
+    
+    body::before {
+        background-color: blue;
+        opacity: 1;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -10;
+        height: 101%;
+        width: 101%;
+        margin-left: -8px;
+    }
+</style>
+
+<body>
+    <nav id="nav">
+
+        <div class="logos">
+            <a href="https://www.svgrepo.com/show/332020/codepen-circle.svg">
+                <img src="https://www.svgrepo.com/show/332020/codepen-circle.svg" alt="" width="20px" height="20px">
+            </a>
+        </div>
+
+        <div class="logo">
+
+            <h3>FCC: Survey Form</h3>
+            <p class="code">freeCodeCamp.org</p>
+
+        </div>
+        <div id="net">
+            <div class="net2">
+                <button class="editor">View in Editor</button>
+            </div>
+            <div class="net2">
+                <button class="editor1">Sign up</button>
+            </div>
+            <div class="net2">
+                <button class="editor2"> Login</button>
+            </div>
+
+        </div>
+    </nav>
+    <div class="net3">
+        <div class="body">
+            <div class="content">
+                <h2 class="codes">freeCodeCamp Survey form</h2>
+                <p class="codess"><em>Thank you for taking the time to help us improve the platform</em></p>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form1">
+                <form action="">
+                    <fieldset class="field">
+                        <p class="d"> Name</p> <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                        <p class="d"> Email </p><input type="email" placeholder="Enter Your Email">
+                        <p class="d"> Age </p><input type="number" placeholder="Enter Your Age">
+
+                        </select>
+                        <p class="d">Would you recommend freeCodeCamp to a friend?</p>
+
+                        <input type="radio" name="" id="">
+                        <p class="d"> Definetly</p>
+                        <input type="radio" name="" id="">
+                        <p class="d">May be</p>
+                        <input type="radio" name="" id="">
+                        <p class="d">Not sure</p>
+
+                        <p> Which option best describes your current role?</p>
+
+                        <select name="" id="">
+                    <option value="">Select an Option</option>
+                    <option value="ind">challenges</option>
+                    <option value="">Projects</option>
+                    <option value="">community</option>
+                    <option value="">Open source</option>
+
+                     <label for="">
+                        <p class=""> What would you like to see improved?(check all that apply) </p>
+                       <input type="checkbox" name="" id=""> <label for=""> Frontend-projects</label>
+                    
+                      <input type="checkbox" name="" id="">
+                      <label for="">Backend-projects</label>
+
+                      <input type="checkbox" name="" id="">
+                      <label for="">Data visualization</label>
+                      <input type="checkbox" name="" id="">
+                      <label for="">Challenges</label>
+
+                      <input type="checkbox" name="" id="">
+                      <label for="">open source community</label>
+                      <input type="checkbox" name="" id="">
+                      <label for="">Gitter help rooms</label>
+                      <input type="checkbox" name="" id="">
+                      <label for="">videos</label>
+
+                      <input type="checkbox" name="" id="">
+                      <label for="">City meetups</label>
+                      <input type="checkbox" name="" id="">
+                      <label for="">wiki</label>
+                      <input type="checkbox" name="" id="">
+                      <label for="">forum</label>
+                      <input type="checkbox" name="" id="">
+                      <label for="">Additional courses</label>
+
+
+                        </label>
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="" id="" cols="30" rows="7"></textarea>
+                        <input type="submit" name="" id="sub">
+
+                    </div>
+                    
+
+
+
+                  
+                    
+
+
+                    </label> 
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
